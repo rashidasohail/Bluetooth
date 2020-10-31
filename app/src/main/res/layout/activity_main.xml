@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        android:onClick="button_on"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp" />
+    <Button
+        android:id="@+id/btnOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="button_off"
+        android:layout_alignBottom="@+id/btnGet"
+        android:layout_toRightOf="@+id/btnGet"
+        android:text="Turn OFF" />
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices"
+        android:onClick="button_paired_devices"
+        android:layout_alignBottom="@+id/btnOn"
+        android:layout_toRightOf="@+id/btnOn" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_width="320dp"
+        android:layout_height="402dp">
+
+    </ListView>
+
+</RelativeLayout>
